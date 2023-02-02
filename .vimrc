@@ -7,9 +7,10 @@ set ignorecase
 set smartcase
 set number relativenumber
 set nostartofline
+set highlightedyank
 
-inoremap <C-space> <Esc>
-vnoremap <C-space> <Esc>
+inoremap <C-i> <Esc>
+vnoremap <C-i> <Esc>
 " Bubble single lines
 nmap <C-Up> ddkP
 nmap <C-Down> ddp
@@ -23,3 +24,6 @@ vmap <C-j> xp`[V`]
 " tabs
 nnoremap <C-h> :tabprevious<CR>
 nnoremap <C-l> :tabnext<CR>
+
+nnoremap gn :action GotoNextError<CR>
+nnoremap gp :action GotoPreviousError<CR>
