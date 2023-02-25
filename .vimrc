@@ -9,8 +9,6 @@ set number relativenumber
 set nostartofline
 set highlightedyank
 
-inoremap <C-i> <Esc>
-vnoremap <C-i> <Esc>
 " Bubble single lines
 nmap <C-Up> ddkP
 nmap <C-Down> ddp
