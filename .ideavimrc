@@ -1,0 +1,34 @@
+let mapleader = ' '
+
+set surround
+set scrolloff=10
+set incsearch
+set ignorecase
+set smartcase
+set number relativenumber
+set nostartofline
+set highlightedyank
+set visualbell
+set noerrorbells
+
+" Bubble single lines
+" nmap <C-Up> ddkP
+" nmap <C-Down> ddp
+" nmap <C-k> ddkP
+" nmap <C-j> ddp
+" Bubble multiple lines
+" vmap <C-Up> xkP`[V`]
+" vmap <C-Down> xp`[V`]
+" vmap <C-k> xkP`[V`]
+" vmap <C-j> xp`[V`]
+" tabs
+nnoremap <C-h> :tabprevious<CR>
+nnoremap <C-l> :tabnext<CR>
+
+nnoremap gn :action GotoNextError<CR>
+nnoremap gp :action GotoPreviousError<CR>
+
+nnoremap <leader>ef :action ActivateProjectToolWindow<CR>
+nnoremap <leader>er :action RecentFiles<CR>
+nnoremap <leader>gs :action ActivateCommitToolWindow<CR>
+nnoremap <leader>gc :action ActivateVcsChangesToolWindow<CR>
